@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: Refme-MongoDB
+    ports:
+      - "${DB_PORT}:${DB_PORT}"
+    volumes:
+      - ./data/mongodb:/data/db
+    env_file:
+      - .env # Указываем файл с переменными
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${DB_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${DB_PASSWORD}

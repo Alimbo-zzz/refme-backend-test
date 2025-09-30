@@ -1,0 +1,34 @@
+# .gitignore
+
+### Локальные данные и настройки ###
+data 
+.env  
+.env.local
+.env*.local
+
+### Node.js ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+### TypeScript ###
+dist
+*.tsbuildinfo
+
+### IDE и редакторы ###
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+### Тесты и покрытие ###
+coverage/
+*.lcov
+
+### Docker ###
+# Исключаем только конфиги, но не сам Dockerfile
+# docker-compose*.yml
+# !docker-compose.prod.yml  # Пример: если нужно включить prod-конфиг
