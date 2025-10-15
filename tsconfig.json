@@ -15,8 +15,9 @@
 		"resolveJsonModule": true,
 		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true,
-		"baseUrl": "src",
-		"outDir": "dist",
+		"baseUrl": "./src",
+		"rootDir": "./src",
+		"outDir": "./dist",
 		"paths": {
 			"@/*": [
 				"./*"
